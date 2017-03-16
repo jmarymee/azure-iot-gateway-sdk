@@ -9,7 +9,7 @@
         }
       },
       "args": {
-        "filename": "log.txt"
+        "filename": "log.json"
       }
     },
     {
@@ -21,11 +21,21 @@
         }
       },
       "args": null
+    },
+    {
+      "name": "coap",
+      "loader": {
+        "name": "native",
+        "entrypoint": {
+          "module.path": "C:\\Repos\\azure-iot-gateway-sdk\\build\\Debug\\COAP.dll"
+        }
+      },
+      "args": null
     }
   ],
   "links": [
     {
-      "source": "hello_world",
+      "source": "coap",
       "sink": "logger"
     }
   ]
